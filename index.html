@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/tasks/tasks.css" />
+  <title>Local Library</title>
+  
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container container-fluid">
+			<a class="navbar-brand" href="index.html">Frudo</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportContent" aria-controls="navbarSupportContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="newtask.html">New Task</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="newlabel.html">New Label</a>
+					</li>
+				</ul>
+			<form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+			</div>
+		</div>
+	</nav>
+
+  <!-- insert default navigation text for every page -->
+  
+
+	<div class="container container-fluid">
+		<!-- Task list -->
+		<ul class="content-list tasks-list issuable-list"><!--  -->
+		
+			<!-- Task element -->
+			<li class="task">
+				<div class="container-fluid container-limited">
+					<div class="task-box">
+						<div class="divider"></div>
+						<div class="task-info-container">
+							<div class="task-title title row">
+								<!-- Task title -->
+								<span class="task-title-text col">
+									<a href="detail1.html">Teil 2 der Aufgabe implementieren</a>
+								</span>
+								<!-- Task assignees -->
+								<span class="pull-right col">
+									
+									<div class="divider"></div>
+									<span class="d-inline-block" tabindex="1" data-toggle="tooltip" data-placement="bottom" title="admin">
+										<a href="#" class="badge badge-primary">admin</a>
+									</span>
+									
+									<div class="divider"></div>
+									<span class="d-inline-block" tabindex="1" data-toggle="tooltip" data-placement="bottom" title="jannik">
+										<a href="#" class="badge badge-primary">jannik</a>
+									</span>
+									
+									<div class="divider"></div>
+									<span class="d-inline-block" tabindex="1" data-toggle="tooltip" data-placement="bottom" title="phillip">
+										<a href="#" class="badge badge-primary">phillip</a>
+									</span>
+									
+								</span>
+							</div>
+							<!-- Task information -->
+							<div class="task-info">
+								<!-- Due date -->
+								May 14, 2018
+								<!-- Labels -->
+								
+								<span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="bottom" title="Programmierpraktikum Soziale  Netzwerke">
+									<a href="#" class="badge badge-pill" style="background-color: Red; color: #FFFFFF">PPSN</a>
+								</span>
+								
+								<!-- Progress -->
+								<span class="pull-right">
+									35 %
+								</span>
+							</div>
+						</div>
+						<!-- In the future, we might use a label for important tasks -->
+						
+						<!-- Button to close a task -->
+						<button type="button" class="btn btn-outline-danger" onclick="location.href= '#';">Close</button>
+					</div>
+				</div>
+				<!-- Add number of comments-->
+			</li>
+		
+			<!-- Task element -->
+			<li class="task">
+				<div class="container-fluid container-limited">
+					<div class="task-box">
+						<div class="divider"></div>
+						<div class="task-info-container">
+							<div class="task-title title row">
+								<!-- Task title -->
+								<span class="task-title-text col">
+									<a href="/tasks/1/">An Rücksprache teilnehmen</a>
+								</span>
+								<!-- Task assignees -->
+								<span class="pull-right col">
+									
+									<div class="divider"></div>
+									<span class="d-inline-block" tabindex="1" data-toggle="tooltip" data-placement="bottom" title="admin">
+										<a href="#" class="badge badge-primary">admin</a>
+									</span>
+									
+									<div class="divider"></div>
+									<span class="d-inline-block" tabindex="1" data-toggle="tooltip" data-placement="bottom" title="jannik">
+										<a href="#" class="badge badge-primary">jannik</a>
+									</span>
+									
+								</span>
+							</div>
+							<!-- Task information -->
+							<div class="task-info">
+								<!-- Due date -->
+								April 30, 2018
+								<!-- Labels -->
+								
+								<span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="bottom" title="Programmierpraktikum Soziale  Netzwerke">
+									<a href="#" class="badge badge-pill" style="background-color: Red; color: #FFFFFF">PPSN</a>
+								</span>
+								
+								<!-- Progress -->
+								<span class="pull-right">
+									0 %
+								</span>
+							</div>
+						</div>
+						<!-- In the future, we might use a label for important tasks -->
+						
+						<!-- Button to close a task -->
+						<button type="button" class="btn btn-outline-danger" onclick="location.href= '#';">Close</button>
+					</div>
+				</div>
+				<!-- Add number of comments-->
+			</li>
+		
+		</ul>
+	</div>
+
+
+
+
+	
+	<footer class="footer">
+		<div class="container container-fluid">
+			<a class="float-right text-muted" href="impressum.html">Impressum</a>
+		</div>
+	</footer>
+	
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+ 
+</body>
+</html>
+
+
+

@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/tasks/tasks.css" />
+  <title>Frudo</title>
+  
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container container-fluid">
+			<a class="navbar-brand" href="index.html">Frudo</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportContent" aria-controls="navbarSupportContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="newtask.html">New Task</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="newlabel.html">New Label</a>
+					</li>
+				</ul>
+			<form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+			</div>
+		</div>
+	</nav>
+
+  <!-- insert default navigation text for every page -->
+  
+<div class="container">
+	<h1>Create new task</h1>
+	<form action="" method=POST>
+		<input type='hidden' name='csrfmiddlewaretoken' value='Ixpt4rnhMWSuhpyT6Eq3MABCVp0VtEiWb4xyMocwMDSPi6klvO6dogXbY7lsL5UV' />
+		
+		<div class="form-group row">
+			<label for=id_task_text class="col-sm-2 col-form-label"><label for="id_task_text">Task text:</label></label>
+			<div class="col-sm-10">
+				<input type="text" name="task_text" value="Teil 2 der Aufgabe implementieren" class="form-control" required id="id_task_text" />
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for=id_task_description class="col-sm-2 col-form-label"><label for="id_task_description">Task description:</label></label>
+			<div class="col-sm-10">
+				<textarea name="task_description" cols="40" rows="10" class="form-control" required id="id_task_description">
+Ein funktionierendes TODO-System implementieren.</textarea>
+			</div>
+		</div>
+		<hr />
+		<div class="form-group row">
+			<label for=id_assignedTo class="col-sm-2 col-form-label"><label for="id_assignedTo">AssignedTo:</label></label>
+			<div class="col-sm-4">
+				<select class="form-control" multiple="multiple" style="width: 100%" name="assignedTo" id="id_assignedTo">
+      					
+						<option selected value="1">admin</option>
+					
+						<option value="2">anne</option>
+					
+						<option selected value="3">jannik</option>
+					
+						<option selected value="4">phillip</option>
+					
+				</select>
+			</div>
+			<label for=id_finished_date class="col-sm-2 col-form-label"><label for="id_finished_date">Finished date:</label></label>
+			<div class="col-sm-4">
+				<input type="date" name="finished_date" min="1000-01-01" max="3000-12-31" class="form-control" value="2018-05-14">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="id_labels" class="col-sm-2 col-form-label"><label for="id_labels">Labels:</label></label>
+			<div class="col-sm-4">
+				<select class="select_label_class form-control" multiple="multiple" style="width: 100%" name="labels" id="id_labels">
+				
+					<option selected value="1"> PPSN</option>
+				
+					<option value="2">important</option>
+				
+					<option value="3">enhancement</option>
+				
+				</select>
+			</div>
+			<label for=id_progress class="col-sm-2 col-form-label"><label for="id_progress">Progress:</label></label>
+			<div class="col-sm-4">
+				<input type="number" name="progress" value="35" required id="id_progress" />
+			</div>
+		</div>
+		<input class="btn btn-success" type="submit" value="Save" />
+		<button type="button" class="btn btn-outline-danger float-right" onclick="location.href= 'detail1.html';">Cancel</button>
+	</form>
+</div>
+
+
+
+	
+	<footer class="footer">
+		<div class="container container-fluid">
+			<a class="float-right text-muted" href="impressum.html">Impressum</a>
+		</div>
+	</footer>
+	
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+    			$('#id_assignedTo').select2({
+				width: 'resolve'
+			});
+		});
+		$(document).ready(function() {
+			$('.select_label_class').select2({
+				width: 'resolve'
+			});
+		});
+	</script>
+
+</body>
+</html>
+
+
+
